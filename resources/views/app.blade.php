@@ -101,6 +101,9 @@
     @yield('content')
 
 
+    <!-- Gov.uk Link Start -->
+    @include('sections.govlink')
+    <!-- Gov.uk Link End -->
     <!-- Footer Start -->
     <div class="py-6 my-6 mb-0 container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
