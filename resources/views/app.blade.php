@@ -73,7 +73,7 @@
 
     <!-- Navbar Start -->
     <nav class="p-0 bg-white navbar navbar-expand-lg navbar-light sticky-top">
-        <a href="index.html" class="px-4 navbar-brand d-flex align-items-center border-end px-lg-5">
+        <a href="{{route('home')}}" class="px-4 navbar-brand d-flex align-items-center border-end px-lg-5">
             <h2 class="m-0"><i class="fa fa-car text-primary me-2"></i>Brilliant Driving</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

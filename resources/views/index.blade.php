@@ -57,8 +57,8 @@
                             <i class="text-white fa fa-car"></i>
                         </div>
                         <div class="ps-4">
-                            <h5>Comprehensive Driving Tests</h5>
-                            <span>Our driving tests are designed to evaluate your skills thoroughly and ensure you are road-ready.</span>
+                            <h5>No Driving Tests Required</h5>
+                            <span>With our streamlined online process, you can obtain your UK driver's license without the need for traditional driving tests.</span>
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,8 @@
                             <i class="text-white fa fa-users"></i>
                         </div>
                         <div class="ps-4">
-                            <h5>Expert Instructors</h5>
-                            <span>Learn from certified instructors who provide professional guidance and support.</span>
+                            <h5>Expert Support</h5>
+                            <span>Our team provides professional guidance and support throughout the entire online application process.</span>
                         </div>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
                             <i class="text-white fa fa-file-alt"></i>
                         </div>
                         <div class="ps-4">
-                            <h5>Obtain Your License</h5>
-                            <span>Our streamlined process helps you obtain your driving license efficiently and effectively.</span>
+                            <h5>Obtain Your License Online</h5>
+                            <span>Our efficient online process helps you obtain your UK driver's license quickly and easily.</span>
                         </div>
                     </div>
                 </div>
@@ -108,9 +108,9 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
                     <h6 class="mb-2 text-primary text-uppercase">About Us</h6>
-                    <h1 class="mb-4 display-6">Helping You Pass Your Test & Obtain Your License on the First Try</h1>
-                    <p>Our driving school is dedicated to providing comprehensive driving tests and professional instruction to ensure you are fully prepared for the road. We focus on delivering high-quality training that helps you pass your test and obtain your license efficiently.</p>
-                    <p class="mb-4">With our experienced instructors and structured lessons, we aim to make the process of getting your driving license smooth and stress-free. Join us and take the first step towards becoming a confident and responsible driver.</p>
+                    <h1 class="mb-4 display-6">Get Your UK Driver's License Easily Online</h1>
+                    <p>At Brilliant Driving School, we offer a unique and streamlined process to help you obtain your UK driver's license without the need for a traditional driving test. Our online process is designed to be simple, efficient, and stress-free.</p>
+                    <p class="mb-4">With our innovative approach, you can secure your driver's license through an easy online application. Our team is dedicated to providing you with all the necessary resources and support to ensure a smooth experience from start to finish. Join us and take the hassle out of getting your UK driver's license.</p>
                     <div class="pb-2 mb-4 row g-2">
                         <div class="col-sm-6">
                             <i class="fa fa-check text-primary me-2"></i>Fully Licensed
@@ -127,10 +127,10 @@
                     </div>
                     <div class="row g-4">
                         <div class="col-sm-6">
-                            <a class="px-5 py-3 btn btn-primary"  href="https://wa.me/447943883854" target="_blank">Know More</a>
+                            <a class="px-5 py-3 btn btn-primary" href="https://wa.me/447943883854" target="_blank">Know More</a>
                         </div>
                         <div class="col-sm-6">
-                            <a class="p-2 border-2 d-inline-flex align-items-center btn btn-outline-primary"  href="https://wa.me/447943883854" target="_blank">
+                            <a class="p-2 border-2 d-inline-flex align-items-center btn btn-outline-primary" href="https://wa.me/447943883854" target="_blank">
                                 <span class="flex-shrink-0 btn-square bg-primary">
                                     <i class="text-white fa fa-phone-alt"></i>
                                 </span>

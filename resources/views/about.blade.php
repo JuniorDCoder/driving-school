@@ -30,9 +30,9 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
                     <h6 class="mb-2 text-primary text-uppercase">About Us</h6>
-                    <h1 class="mb-4 display-6">Helping You Pass Your Driving Test and Secure Your License</h1>
-                    <p>At our driving academy, we specialize in providing top-tier training and resources to help individuals pass their driving tests confidently and efficiently. Our programs are designed to prepare you for every aspect of the test, ensuring success on the first try.</p>
-                    <p class="mb-4">With a team of certified trainers and a commitment to excellence, we make the process of obtaining your driving license smooth and stress-free. From theory preparation to practical driving, we’re with you every step of the way.</p>
+                    <h1 class="mb-4 display-6">Get Your UK Driver's License Easily Online</h1>
+                    <p>At Brilliant Driving School, we offer a unique and streamlined process to help you obtain your UK driver's license without the need for a traditional driving test. Our online process is designed to be simple, efficient, and stress-free.</p>
+                    <p class="mb-4">With our innovative approach, you can secure your driver's license through an easy online application. Our team is dedicated to providing you with all the necessary resources and support to ensure a smooth experience from start to finish. Join us and take the hassle out of getting your UK driver's license.</p>
                     <div class="pb-2 mb-4 row g-2">
                         <div class="col-sm-6">
                             <i class="fa fa-check text-primary me-2"></i>Fully Accredited
