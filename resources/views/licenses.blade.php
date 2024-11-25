@@ -7,7 +7,7 @@
         <h1 class="mb-4 text-white display-4 animated slideInDown">License</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="mb-0 breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="{{route('home')}}">Home</a></li>
                 <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
                 <li class="breadcrumb-item text-primary active" aria-current="page">Licenses</li>
             </ol>
