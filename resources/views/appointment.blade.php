@@ -30,36 +30,68 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <h6 class="mb-2 text-primary text-uppercase">Appointment</h6>
                 <h1 class="mb-4 display-6">Make An Appointment To Pass Test & Get A License On The First Try</h1>
-                <form>
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+                <form action="{{ route('appointment') }}" method="POST">
+                    @csrf
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="border-0 form-control bg-light" id="gname" placeholder="Gurdian Name">
+                                <input type="text" class="border-0 form-control bg-light @error('name') is-invalid @enderror" id="gname" name="name" placeholder="Your Name" value="{{ old('name') }}" placeholder="Gurdian Name">
                                 <label for="gname">Your Name</label>
+                                @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="border-0 form-control bg-light" id="gmail" placeholder="Gurdian Email">
+                                <input type="email" class="border-0 form-control bg-light  @error('email') is-invalid @enderror" id="gmail" name="email">
                                 <label for="gmail">Your Email</label>
+                                @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="border-0 form-control bg-light" id="cname" placeholder="Child Name">
-                                <label for="cname">Courses Type</label>
+                                <input type="text" class="border-0 form-control bg-light  @error('license_type') is-invalid @enderror" id="cname" name="license_type" placeholder="Child Name">
+                                <label for="cname">License Type</label>
+                                @error('license_type')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="border-0 form-control bg-light" id="cage" placeholder="Child Age">
+                                <input type="text" class="border-0 form-control bg-light  @error('car_type') is-invalid @enderror" name="car_type" id="cage" placeholder="Child Age">
                                 <label for="cage">Car Type</label>
+                                @error('car_type')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="border-0 form-control bg-light" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                <textarea class="border-0 form-control bg-light @error('message') is-invalid @enderror" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
                                 <label for="message">Message</label>
+                                @error('message')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">
