@@ -115,7 +115,7 @@
                     <h2 class="mb-4 text-primary"><i class="text-white fa fa-car me-2"></i>Brilliant Driving</h2>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bryn Celine Llansamlet, Swansea SA7 9SG, United Kingdom</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 7943883854</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{ env('MAIL_FROM_ADDRESS') }}</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="mb-4 text-light">Quick Links</h4>
