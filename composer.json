@@ -70,6 +70,9 @@
             "advisories": {
                 "block": true
             }
+        },
+        "platform": {
+            "php": "8.3.31"
         }
     },
     "minimum-stability": "stable",
