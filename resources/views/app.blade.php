@@ -41,13 +41,13 @@
 
 
     <!-- Topbar Start -->
-    <div class="p-0 container-fluid bg-dark text-light">
+    <div class="p-2 container-fluid bg-dark text-light">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="px-5 col-lg-7 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
+                {{-- <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>Bryn Celine Llansamlet, Swansea SA7 9SG, United Kingdom</small>
-                </div>
+                </div> --}}
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
                     <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
@@ -56,8 +56,8 @@
             <div class="px-5 col-lg-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small class="me-2">+44 7943883854</small>
-                    <small>+44 7436175697</small>
+                    <small class="me-2">{{ config('services.contact.primary') }}</small>
+                    <small>{{ config('services.contact.secondary') }}</small>
                 </div>
                 {{-- <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="border-0 btn btn-square btn-link rounded-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
@@ -85,7 +85,7 @@
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}">About</a>
                 <a href="{{ route('licenses') }}" class="nav-item nav-link {{ Route::currentRouteName() == 'licenses' ? 'active' : '' }}">Licenses</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="m-0 dropdown-menu bg-light">
                         <a href="{{route('features')}}" class="dropdown-item">Features</a>
                         <a href="{{route('appointment')}}" class="dropdown-item">Appointment</a>
@@ -113,9 +113,9 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="mb-4 text-white">Get In Touch</h4>
                     <h2 class="mb-4 text-primary"><i class="text-white fa fa-car me-2"></i>Brilliant Driving</h2>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bryn Celine Llansamlet, Swansea SA7 9SG, United Kingdom</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 7943883854</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{ env('MAIL_FROM_ADDRESS') }}</p>
+                    {{-- <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bryn Celine Llansamlet, Swansea SA7 9SG, United Kingdom</p> --}}
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{ config('services.contact.primary') }}</p>
+                    <a href="mailto:{{ env('CONTACT_EMAIL') }}" class="mb-2 text-white">{{ env('CONTACT_EMAIL') }}</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="mb-4 text-light">Quick Links</h4>
@@ -178,6 +178,37 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('click', function (event) {
+            var chatButton = event.target.closest('[data-chatwoot-open]');
+
+            if (chatButton && window.$chatwoot) {
+                event.preventDefault();
+                window.$chatwoot.toggle('open');
+            }
+        });
+    </script>
+
+    @if (config('services.chatwoot.enabled') && config('services.chatwoot.website_token'))
+        <script>
+            (function (d, t) {
+                var baseUrl = @json(config('services.chatwoot.base_url'));
+                var script = d.createElement(t);
+                var firstScript = d.getElementsByTagName(t)[0];
+
+                script.src = baseUrl + '/packs/js/sdk.js';
+                script.async = true;
+                firstScript.parentNode.insertBefore(script, firstScript);
+                script.onload = function () {
+                    window.chatwootSDK.run({
+                        websiteToken: @json(config('services.chatwoot.website_token')),
+                        baseUrl: baseUrl
+                    });
+                };
+            })(document, 'script');
+        </script>
+    @endif
 </body>
 
 </html>

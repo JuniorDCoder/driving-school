@@ -2,17 +2,12 @@
 
 namespace App\Mail;
 
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
 class ContactMail extends Mailable
 {
-    use Queueable, SerializesModels;
-
     public $details, $view;
 
     /**
@@ -30,7 +25,10 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Contact Form Submission',
+            subject: $this->view === 'appointment'
+                ? 'New Appointment Request'
+                : 'New Contact Form Submission',
+            replyTo: [$this->details['email']],
         );
     }
 

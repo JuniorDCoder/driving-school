@@ -23,8 +23,8 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="pt-5 overflow-hidden position-relative ps-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="" style="object-fit: cover;">
-                    <img class="top-0 pb-3 bg-white position-absolute start-0 pe-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;">
+                    <img class="position-absolute w-100 h-100" src="{{ asset('new-assets/photo_2026-09-02_18-41-41.jpg') }}" alt="" style="object-fit: cover;">
+                    <img class="top-0 pb-3 bg-white position-absolute start-0 pe-3" src="{{ asset('new-assets/photo_2026-09-02_18-41-48.jpg') }}" alt="" style="width: 200px; height: 200px; object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -52,11 +52,11 @@
                             <a class="px-5 py-3 btn btn-primary" href="{{route('contact')}}">Learn More</a>
                         </div>
                         <div class="col-sm-6">
-                            <a class="p-2 border-2 d-inline-flex align-items-center btn btn-outline-primary" href="tel:+447943883854">
+                            <a class="p-2 border-2 d-inline-flex align-items-center btn btn-outline-primary" href="tel:{{ config('services.contact.primary') }}">
                                 <span class="flex-shrink-0 btn-square bg-primary">
                                     <i class="text-white fa fa-phone-alt"></i>
                                 </span>
-                                <span class="px-3">+44 7943883854</span>
+                                <span class="px-3">{{ config('services.contact.primary') }}</span>
                             </a>
                         </div>
                     </div>

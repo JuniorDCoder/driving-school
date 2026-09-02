@@ -46,7 +46,8 @@
             <p><strong>Email:</strong> {{ $details['email'] }}</p>
             <p><strong>Subject:</strong> {{ $details['subject'] }}</p>
             <p><strong>Message:</strong></p>
-            <p>{{ $details['message'] }}</p>
+            <p>{!! nl2br(e($details['message'])) !!}</p>
+            <p><a href="mailto:{{ $details['email'] }}?subject={{ rawurlencode('Re: ' . $details['subject']) }}" style="display: inline-block; padding: 12px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 4px;">Reply to customer</a></p>
         </div>
         <div class="footer">
             <p>&copy; {{ date('Y') }} Brilliant Driving School. All rights reserved.</p>

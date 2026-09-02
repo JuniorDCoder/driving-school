@@ -64,4 +64,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # driving-school
+
+## Contact and Chatwoot configuration
+
+Copy the contact and Chatwoot entries from `.env.example` into `.env`, then set the two phone numbers in international format. The site reads these values from `CONTACT_PHONE_PRIMARY` and `CONTACT_PHONE_SECONDARY` everywhere they are displayed.
+
+To enable the floating Chatwoot support widget:
+
+1. Create or sign in to a Chatwoot Cloud account at [chatwoot.com](https://www.chatwoot.com/), or use the URL of your own Chatwoot installation.
+2. Create an inbox using the **Website** channel and add your site URL under the website channel settings.
+3. Copy the generated website token into `CHATWOOT_WEBSITE_TOKEN`.
+4. Set `CHATWOOT_BASE_URL` to `https://app.chatwoot.com` for Chatwoot Cloud, or to the base URL of your self-hosted instance.
+5. Set `CHATWOOT_ENABLED=true` and clear Laravel's cached configuration with `php artisan config:clear` (or `php artisan config:cache` in production).
+
+The widget is loaded globally from the shared layout only when both the enable flag and website token are present.

@@ -47,7 +47,8 @@
             <p><strong>Car Type:</strong> {{ $details['car_type'] }}</p>
             <p><strong>License Type:</strong> {{ $details['license_type'] }}</p>
             <p><strong>Message:</strong></p>
-            <p>{{ $details['message'] }}</p>
+            <p>{!! nl2br(e($details['message'])) !!}</p>
+            <p><a href="mailto:{{ $details['email'] }}?subject={{ rawurlencode('Re: Appointment request') }}" style="display: inline-block; padding: 12px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 4px;">Reply to customer</a></p>
         </div>
         <div class="footer">
             <p>&copy; {{ date('Y') }} Brilliant Driving School. All rights reserved.</p>

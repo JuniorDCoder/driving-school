@@ -18,4 +18,5 @@
 
 
 @include('sections.licenses')
+@include('sections.license-gallery')
 @endsection

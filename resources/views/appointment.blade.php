@@ -8,7 +8,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="mb-0 breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a class="text-white" href="{{route('home')}}">Home</a></li>
-                <li class="breadcrumb-item"><a class="text-white">Pages</a></li>
+                <li class="breadcrumb-item"><a class="text-white">More</a></li>
                 <li class="breadcrumb-item text-primary active" aria-current="page">Appointment</li>
             </ol>
         </nav>
@@ -23,8 +23,8 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="pt-5 overflow-hidden position-relative ps-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="" style="object-fit: cover;">
-                    <img class="top-0 pb-3 bg-white position-absolute start-0 pe-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;">
+                    <img class="position-absolute w-100 h-100" src="{{ asset('new-assets/photo_2026-09-02_18-42-41.jpg') }}" alt="" style="object-fit: cover;">
+                    <img class="top-0 pb-3 bg-white position-absolute start-0 pe-3" src="{{ asset('new-assets/photo_2026-09-02_18-42-49.jpg') }}" alt="" style="width: 200px; height: 200px; object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

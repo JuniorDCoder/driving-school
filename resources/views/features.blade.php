@@ -8,7 +8,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="mb-0 breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a class="text-white" href="{{route('home')}}">Home</a></li>
-                <li class="breadcrumb-item"><a class="text-white" >Pages</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >More</a></li>
                 <li class="breadcrumb-item text-primary active" aria-current="page">Features</li>
             </ol>
         </nav>

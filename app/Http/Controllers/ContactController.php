@@ -17,7 +17,7 @@ class ContactController extends Controller
             'message' => 'required|string|min:10',
         ]);
 
-        Mail::to('info@brilliantdrivingschool.online')->send(new ContactMail($details));
+        Mail::to(config('services.contact.admin'))->send(new ContactMail($details));
 
         return back()->with('success', 'Your message has been sent successfully!');
     }
@@ -31,7 +31,7 @@ class ContactController extends Controller
             'message' => 'required|string|min:10',
         ]);
 
-        Mail::to('info@brilliantdrivingschool.online')->send(new ContactMail($details, 'appointment'));
+        Mail::to(config('services.contact.admin'))->send(new ContactMail($details, 'appointment'));
 
         return back()->with('success', 'Your appointment has been sent successfully!');
     }

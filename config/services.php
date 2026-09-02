@@ -35,4 +35,16 @@ return [
         ],
     ],
 
+    'contact' => [
+        'primary' => env('CONTACT_PHONE_PRIMARY'),
+        'secondary' => env('CONTACT_PHONE_SECONDARY'),
+        'admin' => env('CONTACT_EMAIL'),
+    ],
+
+    'chatwoot' => [
+        'enabled' => env('CHATWOOT_ENABLED', false),
+        'base_url' => env('CHATWOOT_BASE_URL', 'https://app.chatwoot.com'),
+        'website_token' => env('CHATWOOT_WEBSITE_TOKEN'),
+    ],
+
 ];

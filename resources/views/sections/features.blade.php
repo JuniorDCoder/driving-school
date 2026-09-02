@@ -65,8 +65,8 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="pt-5 overflow-hidden position-relative pe-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="Driving Training" style="object-fit: cover;">
-                    <img class="top-0 pb-3 bg-white position-absolute end-0 ps-3" src="img/about-2.jpg" alt="Driving Lessons" style="width: 200px; height: 200px">
+                    <img class="position-absolute w-100 h-100" src="{{ asset('new-assets/photo_2026-09-02_18-42-41.jpg') }}" alt="Driving Training" style="object-fit: cover;">
+                    <img class="top-0 pb-3 bg-white position-absolute end-0 ps-3" src="{{ asset('new-assets/photo_2026-09-02_18-42-49.jpg') }}" alt="Driving Lessons" style="width: 200px; height: 200px; object-fit: cover;">
                 </div>
             </div>
         </div>

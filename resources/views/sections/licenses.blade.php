@@ -17,9 +17,9 @@
                         </ol>
                     </div>
                     <div class="mt-auto position-relative">
-                        <img class="img-fluid" src="img/courses-1.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('new-assets/photo_2026-09-02_18-41-41.jpg') }}" alt="">
                         <div class="courses-overlay">
-                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}">Know More</a>
+                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}" data-chatwoot-open>Know More</a>
                         </div>
                     </div>
                 </div>
@@ -36,9 +36,9 @@
                         </ol>
                     </div>
                     <div class="mt-auto position-relative">
-                        <img class="img-fluid" src="img/courses-2.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('new-assets/photo_2026-09-02_18-41-48.jpg') }}" alt="">
                         <div class="courses-overlay">
-                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}">Know More</a>
+                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}" data-chatwoot-open>Know More</a>
                         </div>
                     </div>
                 </div>
@@ -55,9 +55,9 @@
                         </ol>
                     </div>
                     <div class="mt-auto position-relative">
-                        <img class="img-fluid" src="img/licenses/1.jpeg" alt="">
+                        <img class="img-fluid" src="{{ asset('new-assets/photo_2026-09-02_18-42-53.jpg') }}" alt="">
                         <div class="courses-overlay">
-                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}">Know More</a>
+                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}" data-chatwoot-open>Know More</a>
                         </div>
                     </div>
                 </div>
@@ -74,9 +74,9 @@
                         </ol>
                     </div>
                     <div class="mt-auto position-relative">
-                        <img class="img-fluid" src="img/courses-3.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('new-assets/photo_2026-09-02_18-43-00.jpg') }}" alt="">
                         <div class="courses-overlay">
-                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}">Know More</a>
+                            <a class="border-2 btn btn-outline-primary" href="{{route('appointment')}}" data-chatwoot-open>Know More</a>
                         </div>
                     </div>
                 </div>
