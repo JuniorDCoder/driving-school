@@ -135,6 +135,10 @@
 
 @include('sections.license-gallery')
 
+<!-- Conversations & Delivery Start -->
+@include('sections.conversations')
+<!-- Conversations & Delivery End -->
+
 <!-- Features Start -->
 @include('sections.features')
 <!-- Features End -->

@@ -18,6 +18,8 @@ Route::get('appointment', [HomeController::class, 'appointment'])
     ->name('appointment');
 Route::get('testimonials', [HomeController::class, 'testimonials'])
     ->name('testimonials');
+Route::get('conversations', [HomeController::class, 'conversations'])
+    ->name('conversations');
 Route::post('contact', [ContactController::class, 'sendMail'])
     ->name('contact.send');
 Route::post('appointment', [ContactController::class, 'sendAppointment'])

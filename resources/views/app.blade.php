@@ -84,6 +84,7 @@
                 <a href="{{route('home')}}" class="nav-item nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}">About</a>
                 <a href="{{ route('licenses') }}" class="nav-item nav-link {{ Route::currentRouteName() == 'licenses' ? 'active' : '' }}">Licenses</a>
+                <a href="{{ route('conversations') }}" class="nav-item nav-link {{ Route::currentRouteName() == 'conversations' ? 'active' : '' }}">Conversations</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="m-0 dropdown-menu bg-light">

@@ -32,4 +32,8 @@ class HomeController extends Controller
     public function appointment(){
         return view('appointment');
     }
+
+    public function conversations(){
+        return view('conversations');
+    }
 }
