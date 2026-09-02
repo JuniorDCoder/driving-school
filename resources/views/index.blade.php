@@ -135,6 +135,10 @@
 
 @include('sections.license-gallery')
 
+<!-- Theory Test Certificates Teaser Start -->
+@include('sections.theory-certificates', ['limit' => 4])
+<!-- Theory Test Certificates Teaser End -->
+
 <!-- Conversations & Delivery Start -->
 @include('sections.conversations')
 <!-- Conversations & Delivery End -->

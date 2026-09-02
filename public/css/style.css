@@ -423,6 +423,10 @@
     background: #f9fafb;
 }
 
+.theory-certificates-section {
+    background: #ffffff;
+}
+
 #conversationLightbox .modal-content {
     background: transparent;
 }

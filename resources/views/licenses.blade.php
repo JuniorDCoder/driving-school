@@ -19,4 +19,5 @@
 
 @include('sections.licenses')
 @include('sections.license-gallery')
+@include('sections.theory-certificates')
 @endsection
